@@ -25,7 +25,7 @@ class WindowClass(QMainWindow, form_class):
     global saved_com
 
     saved_com = ['COM8', 9600]
-    seri = Serial(port=saved_com[0], baudrate=saved_com[1], timeout=0.1)
+    seri = Serial()
     seri.close()
     def __init__(self):
         QMainWindow.__init__(self)
